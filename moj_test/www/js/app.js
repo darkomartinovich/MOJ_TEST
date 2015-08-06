@@ -21,7 +21,7 @@ app.controller("myCtrl", function($scope) {
     $scope.pozdrav = "Cao raja";
 });
 
-/*app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/')
 
   $stateProvider.state('home', {
@@ -29,7 +29,7 @@ app.controller("myCtrl", function($scope) {
     template: '<p>Hello, world!</p>'
   })
 })
-*/
+
 function myEventHandler() {
     "use strict" ;
 
