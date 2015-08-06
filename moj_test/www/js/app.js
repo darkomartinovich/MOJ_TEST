@@ -17,16 +17,25 @@
 // NOTE: see app.initEvents() in init-app.js for event handler initialization code.
 var app = angular.module('ionicApp', ['ionic'])
 
-app.controller("myCtrl", function($scope) {
+/*app.controller("myCtrl", function($scope) {
     $scope.pozdrav = "Cao raja";
-});
+});*/
 
 app.config(function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/')
+  $urlRouterProvider.otherwise('/templates/pocetna')
 
-  $stateProvider.state('home', {
+  $stateProvider.state('pocetna', {
     url: '/',
-    template: '<p>Hello, world!</p>'
+     template:"pocetna",
+    //templateUrl: 'templates/pocetna',
+  })
+  .state('stranica1', {
+    url: '/pocetna/stranica1',
+    templateUrl: 'templates/stranica1',
+  })
+  .state('stranica2', {
+     url: '/pocetna/stranica2',
+    templateUrl: 'templates/stranica2',
   })
 })
 
